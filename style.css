@@ -1,0 +1,168 @@
+body {
+    margin: 0 auto;
+    background-color: var(--Pale_blue);
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500, 700, 900;
+}
+
+:root {
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+.main-card {
+    border-radius: 20px;
+    margin: 4% auto;
+    height: 700px;
+    width: 450px;
+    background-color: white;
+}
+
+.image-container > img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content-container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 50px;
+}
+
+.contents > h2 {
+    color: var(--Dark_blue);
+    font-weight: 900;
+}
+
+.contents > p {
+    color: var(--Desaturated_blue);
+}
+
+.price-box {
+    width: auto;
+    background-color: var(--Very_pale_blue);
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    margin: 30px 0;
+    
+}
+
+.price-box > img {
+    padding: 25px 25px 25px 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.annual_year {
+    padding: 11px 25px 5px 0px;
+}
+
+.annual_year p {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--Dark_blue);
+}
+
+#year {
+    font-weight: 500;
+    color: var(--Desaturated_blue);
+    margin-top: -13px;
+}
+
+.change {
+    margin: 8px 0px 10px 57px;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    color: var(--Bright_blue);
+    cursor: pointer;
+}
+
+.payment {
+    width: auto;
+    height: 50px;
+    background-color: var(--Bright_blue);
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 0.1px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.changeColor {
+    background-color: hsl(245, 71%, 63%);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.payment p {
+    color: var(--Very_pale_blue)
+}
+
+.cancel-order p {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--Dark_blue);
+    cursor: pointer;
+}
+
+
+
+/* MOBILE RESPONSIVE */
+
+
+@media screen and (max-width: 475px) {
+
+    body {
+        margin: 7% auto;
+        background-color: var(--Pale_blue);
+        background-image: url('/images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 500, 700, 900;
+    }
+    .main-card {
+        border-radius: 20px;
+        margin: 20% auto;
+        height: 600px;
+        width: 340px;
+        background-color: white;
+    }
+
+    .image-container > img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 340px;
+    }
+
+    .change {
+        margin: 8px 0px 10px 7px;
+        font-size: 13px;
+    }
+
+    .content-container {
+        padding: 20px 20px;
+    }
+
+    .price-box {
+        margin: 10px 0;
+    }
+
+    .payment {
+        margin: 20px 0;
+    }
+
+    .attribution {
+        margin-top: -55px;
+    }
+}
